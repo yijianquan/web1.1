@@ -1,0 +1,196 @@
+a{
+        font-size: 12px;
+        color: #522a06;
+        text-decoration: none;
+}
+a:hover{
+        text-decoration: underline;
+}
+ul{
+        color: #522a06;
+}
+#la{
+        display: inline-block;
+}
+#top{
+        width: 1350px;
+        height: 165px;
+        background: url(images/bg.gif);
+}
+#top1{
+        margin-top: 40px;
+        margin-left: 200px;
+        float: left;
+}
+#red{
+        width: 1350px;
+        height: 40px;
+        background: url(images/nav.jpg);
+}
+#a1{
+        display: inline-block;
+        margin-top: 10px;
+        margin-left: 13px;
+        vertical-align: top;
+}
+#a2{
+        display: inline-block;
+        margin-top: 10px;
+        margin-left: 170px;
+        vertical-align: top;
+}
+#a3{
+        display: inline-block;
+        margin-bottom: 10px;
+        margin-left: 70px;
+        vertical-align: bottom;
+}
+#news{
+	width: 315px;
+	height: 214px;
+	background: url(images/board_bg.png);
+}
+#mingjia{
+        padding: 30px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+}
+#include{
+        width: 226px;
+        height: 110px;
+        margin-left: 29px;
+}
+#more{
+        width: 35px;
+        height: 17px;
+        margin-left: 230px;
+        margin-top: 7px;
+}
+#fengcai1{
+        margin-top: 17px;
+        margin-left: 31px;
+}
+#foot1{
+        margin-top: 10px;
+        float: left;
+        list-style-type: none;
+        margin-left: 20px;
+}
+#foota{
+        float: left;
+        list-style-type: none;
+        margin-left: 375px;
+        margin-top: 10px;
+}
+#line{
+        margin-left: 415px;
+}
+#footsize{
+        font-weight: bolder;
+}
+#middle{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1000px;
+        height: 746px;
+}
+#left{
+        width: 700px;
+        float: left;
+}
+#right{
+        width: 280px;
+        float: right;
+        margin-top: 34px;
+}
+#dabiaoti{
+        font-size: 16px;
+        width: 700px;
+        height: 65px;
+        border-bottom: 1px solid #c9baa5;
+}
+#fubiaoti{
+        font-size: 12px;
+        text-align: center;
+        font-weight: none;
+        color: #757575 10px;
+}
+#massaege{
+        border-width: 10px;
+        font-size: 14px;
+        border-bottom: 1px solid #c9baa5;
+}
+#huiyi{
+        text-align: center;
+}
+#page{
+        height: 40px;
+        line-height: 40px;
+        margin-top: 10px;
+        font-size: 13px;
+        color: #844004;
+}
+#recent{
+        height: 30px;
+        margin-left: 13px;
+}
+#second{
+        width: 280px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: 362px;
+}
+#zhanting{
+        margin-bottom: 15px;
+        margin-top: 25px;
+        text-align: center;
+}
+#mingjiatupian{
+        margin-left: 25px;
+        margin-top: 25px;
+}
+#shengyu{
+        margin-left: 25px;
+        margin-top: 15px;
+        margin-right: 30px;
+        margin-bottom: 0px;
+}
+#left1{
+        width: 200px;
+        height: 530px;
+        float: left;
+}
+#practice1{
+        list-style-type: none;
+        margin-top: 0px;
+}
+#phone{
+        margin-top: 20px;
+}
+#right1{
+        width: 800px;
+        height: 580px;
+        float: right;
+}
+#ul1{
+        list-style-image: url(images/pot.gif);
+}
+#middle1{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1000px;
+        height: 580px;
+}
+#page{
+        height: 24px;
+        width: 28px;
+        border: 1px solid #c9baa5;
+        float: left;
+        margin-top: 0px;
+        margin-left: 5px;
+        text-align: center;
+}
