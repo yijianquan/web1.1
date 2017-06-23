@@ -1,0 +1,320 @@
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+.top{
+	background-color: #000000;
+	height: 100px;
+	width: 1350px;
+	position:fixed;
+}
+.name{
+	padding-left: 150px;
+	padding-top: 16px;
+	float: left;
+}
+.Ename{
+	padding-left: 20px;
+	padding-top: 5px;
+	float: left;
+}
+.navigation{
+	display: inline;
+	padding-left: 80px;
+	padding-top: 20px;
+	float: left;
+}
+.alllink{
+    float: left;
+    margin-left: 80px;
+}
+.link{
+    float: left;
+    margin-top:40px;
+    margin-left: 20px; 
+}
+
+.banner{
+	margin: auto;
+	margin-top: 100px;
+	height: 530px;
+	width: 1350px;
+	display: inline-block;
+}
+.photo div img:hover{
+    transform: scale(1.1);  
+}
+.photo{
+    margin-top: 0px;
+    background-color: #FFFFFF;
+    width: 1350px;
+    height: 450px;
+}
+.photo1{
+    float: left;
+    margin-left: 25px;
+    margin-top: 20px;
+    height: 300px;
+    width: 400px;
+}
+
+.photo2{
+    float: left;
+    margin-top: 20px;
+    height: 300px;
+    width: 480px;
+    margin-left: 10px;
+}
+.photo3{
+    float: left;
+    margin-top: 20px;
+    height: 300px;
+    width: 400px;
+    margin-left: 10px;
+}
+.wenzi1{
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    height: 100px;
+    width: 400px;
+}
+
+.wenzi2{
+    float: left;
+    margin-top: 20px;
+    height: 100px;
+    width: 480px;
+    margin-left: 20px;
+}
+.wenzi3{
+    float: left;
+    margin-top: 20px;
+    height: 100px;
+    width: 400px;
+    margin-left: 10px;
+}
+.jinan{
+}
+.recently{
+    margin-left: 365px;
+    width: 600px;
+    height: 60px;
+    background-color: ;
+}
+.recently1{
+    margin-left: 200px;
+    margin-top: px;
+    float: left;
+}
+.grow{
+    width: 1350px;
+    height: 480px;
+}
+.grow1{
+    background-color: #FFFFFF;
+    width: 1350px;
+    height: 480px;
+}
+.recently2{
+    margin-left: 200px;
+    margin-top: 0px;
+    float: left;
+}
+.s{
+    float: left;
+    margin-left: 0px;
+    width: 337px;
+    height: 500px;
+}
+.m{
+    float: left;
+    margin-left: 0px;
+    width: 338px;
+    height: 500px;
+}
+.h{
+    float: left;
+    margin-left: 0px;
+    width: 338px;
+    height: 500px;
+}
+.u{
+    float: left;
+    margin-left: 0px;
+    width: 337px;
+    height: 500px;
+}
+
+.grow1 div img:hover{
+    transform: scale(1.1);  
+}
+.base{
+    width: 1350px;
+    height: 160px;
+}
+.yijianquan1{
+    margin-left: 160px;
+    float: left;
+}
+.yijianquan2{
+    margin-left: 40px;
+    float: left;
+    margin-top: 5px;
+}
+.yee1{
+
+}
+.jianquan{
+
+}
+.find{
+    float: left;
+    margin-top: 100px;
+}
+
+
+.picture{
+    margin-top: 30px;
+    margin-left: 175px;
+    display: inline-block;
+    width: 1000px;
+    height: 600px;
+    border: 1px solid black;
+}
+.picture div img:hover{
+    filter:alpha(Opacity=80);-moz-opacity:0.5;opacity: 0.5;
+}
+.picture1{
+    float: left;
+    width: 242px;
+    height:342px;
+    border: 4px solid #ffffff;
+}
+.picture2{
+    float: left;
+    width: 492px;
+    height:242px;
+    border: 4px solid #ffffff;
+}
+.picture3{
+    float: left;
+    width: 242px;
+    height:592px;
+    border: 4px solid #ffffff;
+}
+.picture4{
+    position: absolute;
+    left: 176px;
+    top: 644px;
+    width: 242px;
+    height:242px;
+    border: 4px solid #ffffff;
+}
+.picture5{
+    position: absolute;
+    left: 426px;
+    top: 544px;
+    width: 242px;
+    height:342px;
+    border: 4px solid #ffffff;
+}
+.picture6{
+    position: absolute;
+    left: 676px;
+    top: 544px;
+    width: 242px;
+    height:342px;
+    border: 4px solid #ffffff;
+}
+.PHOTOS{
+    margin-left: 570px;
+    margin-top: 150px;
+    display: inline-block;
+    width: 200px;
+    height: 60px;
+}
+.kinds{
+    width: 330px;
+    height: 50px;
+    margin: auto;
+}
+.allphotos{
+    float: left;
+    border-bottom: 5px solid black;
+}
+.family{
+    float: left;
+    border-bottom: 5px solid black;
+    margin-left: 5px;
+}
+.life{
+    float: left;
+    border-bottom: 5px solid black;
+    margin-left: 5px;
+}
+.travel{
+    float: left;
+    border-bottom: 5px solid black;
+    margin-left: 5px;
+}
+.study{
+    float: left;
+    border-bottom: 5px solid black;
+    margin-left: 5px;
+}
+.kinds div img:hover{
+    transform: scale(1.1);  
+}
+
+
+.informphoto{
+    background: url(images/informphoto.jpg);
+    width: 1350px;
+    height: 1000px;
+    position: absolute;
+    top: 100px;
+}
+
+.gerenjieshao{
+    margin-left: 200px;
+    margin-top: 173px;
+    float: left;
+}
+.c{
+    width: 28px;
+    height: 32px;
+    float: left;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+.c1{
+    width: 71px;
+    height: 31px;
+    float: left;
+    margin-top: 40px;
+}
+.c2{
+    width:50px; 
+    height:31px;
+    float: left;
+    margin-top: 40px;
+}
+.javascrip{
+    width: 205px;
+    height: 31px;
+    float: left;
+    margin-top: 40px;
+}
+.vrar{
+    width: 103px;
+    height:32px;
+    float: left;
+    margin-top: 40px;
+}
+.xindiantu{
+    float: left;
+    margin-top: 35px;
+}
