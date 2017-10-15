@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>简单的计算器</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		div{width:30px;height:30px;padding:5px;background-color:#E0E0E0;text-align: center;cursor: pointer; border-style:solid; border-width:1px; border-color:#000;border-radius:5px;}
+		div:hover{background: #EA6F30;}
+		.pane{}
+		td{
+			width: 50px;
+			height: 50px;
+		}
+	</style>
+	<script type="text/javascript">
+	//数据存入字符串,全局变量str
+		var str='';
+	//书写数据显示函数
+		function showData(str){
+			document.getElementById("puts").innerHTML += str;
+		}
+	//计算数值并返回结果
+	function evall() {
+        document.getElementById("puts").innerHTML = eval(document.getElementById("puts").innerHTML);
+    }
+    //清0操作
+    function empty() {
+            document.getElementById("puts").innerHTML = null;
+        }
+	</script>
+</head>
+<!--第一，当用户点击等号时，之前点击的被运算数在结果框中清除；第二，进行数据运算；第三，将运算结果显示在结果框中。将这三个步骤合在一起放在一个函数 calculate 中。-->
+<body>
+		<table border="1px" cellpadding="20px" align="center">
+			<tr><td colspan="4" align="center">欢 迎 使 用 简  易  计  算  器</td></tr>
+			<tr>
+				<td class="pane" colspan="3" id="puts" align="right"></td>
+				<td id="empty" onclick="empty()"><div>C</div></td>
+			</tr>
+			<tr>
+				<td class="button" id="calculater" onclick="showData('1')"><div>1</div></td>
+				<td class="button" id="calculater" onclick="showData('2')"><div>2</div></td>
+				<td class="button" id="calculater" onclick="showData('3')"><div>3</div></td>
+				<td class="button" id="op" onclick="showData('+')"><div>+</div></td>
+			</tr>
+			<tr>
+				<td class="button" id="calculater" onclick="showData('4')"><div>4</div></td>
+				<td class="button" id="calculater" onclick="showData('5')"><div>5</div></td>
+				<td class="button" id="calculater" onclick="showData('6')"><div>6</div></td>
+				<td class="button" id="op" onclick="showData('-')"><div>-</div></td>
+			</tr>
+			<tr>
+				<td class="button" id="calculater" onclick="showData('7')"><div>7</div></td>
+				<td class="button" id="calculater" onclick="showData('8')"><div>8</div></td>
+				<td class="button" id="calculater" onclick="showData('9')"><div>9</div></td>
+				<td class="button" id="op" onclick="showData('*')"><div>*</div></td>
+			</tr>
+			<tr>
+				<td class="button" id="calculater" onclick="showData('0')"><div>0</div></td>
+				<td class="button" id="calculater" onclick="showData('.')"><div>.</div></td>
+				<td id="eva" onclick="evall()"><div>=</div></td>
+				<td class="button" id="op" onclick="showData('/')"><div>/</div></td>
+			</tr>
+		</table>
+</body>
+</html>
