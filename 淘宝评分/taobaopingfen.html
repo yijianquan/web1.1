@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div{
+			width: 500px;
+			margin:0 auto;
+		}
+	</style>
+	<script type="text/javascript">
+		var arr =new Array('a','b','c','d','e');//文本数组
+		var a1= "images/star0.png";
+		var a2= "images/star1.png";
+		var a3= "images/star2.png";
+		var con=false;
+		function starPic(i){
+			for(var a=0;a<i;a++){
+				if(i<3){
+					document.images[a].src=a2;
+					document.getElementById("text").value=arr[a];
+				}
+				else{
+					document.images[a].src=a3;
+					document.getElementById("text").value=arr[a];
+				}
+			}
+		}//鼠标经过
+		function  hide(i){
+			if(!con){
+				for(var a=0;a<i;a++){
+					document.images[a].src=a1;
+				}
+			document.getElementById("text").value=" ";
+			}
+			else{
+				return true;
+			}
+		}
+		function qd(){
+			con=true;
+			for(var a=0;a<5;a++){
+				document.images[a].onmouseover="";
+			}
+		}
+	</script>
+</head>
+<body>
+	<div>
+		<h4>宝贝与面偶数相符（打分匿名）</h4>
+		<a href="#"><img src="images/star0.png" value="1" onmouseover="starPic(1);" onmouseout="hide(1);" onclick="qd();"></a>
+		<a href="#"><img src="images/star0.png" value="2" onmouseover="starPic(2);" onmouseout="hide(2);" onclick="qd();"></a>
+		<a href="#"><img src="images/star0.png" value="3" onmouseover="starPic(3);" onmouseout="hide(3);" onclick="qd();"></a>
+		<a href="#"><img src="images/star0.png" value="4" onmouseover="starPic(4);" onmouseout="hide(4);" onclick="qd();"></a>
+		<a href="#"><img src="images/star0.png" value="5" onmouseover="starPic(5);" onmouseout="hide(5);" onclick="qd();"></a>
+		<textarea rows="10" cols="50" id="text"></textarea>
+	</div>
+</body>
+</html>
