@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>表格</title>
+	<meta charset="utf-8" />
+	<style type="text/css">
+		*{font-size: 36px;}
+		tr{height: 30px;}
+	</style>
+	<script type="text/javascript">
+		function Add(){
+			var btn = document.getElementsByTagName("tr")[0];
+			var newbtn = document.createElement("td");
+			newbtn.setAttribute("font-size","36px");
+			newbtn.setAttribute("width","50px");
+			btn.appendChild(newbtn);
+		}
+		function Delete(){
+			var btn = document.getElementsByTagName("tr");
+			btn.replaceChild("<td></td>","");
+		}
+	</script>
+</head>
+<body>
+	<table width="1000px" border="1">
+		<tr height="30px" id="tr1">
+			<td></td><td></td><td></td><td></td><td></td><td></td>
+			<td></td><td></td><td></td><td></td><td></td><td></td>
+		</tr>
+	</table>
+	<input type="button" name="" id="add" value="添加一行" style="margin-left:840px;" onclick="Add()" />
+	<input type="button" name="" id="delete" value="删除一行" style="margin-left:840px;" onclick="Delete()"/>
+</body>
+</html>
