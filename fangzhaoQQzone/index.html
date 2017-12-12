@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title> 仿QQ空间相册 </title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        #main{
+        width:1000px;
+        margin:auto;
+        }
+        #smallpic{
+        height:120px; 
+        }
+        img{
+        float:left; 
+        margin-right:10px; 
+        margin-bottom:10px;
+        }
+        #smallpic img:hover{
+            cursor:pointer; /*设定鼠标的形状为小手*/
+        }
+        .pb{
+         border:3px solid #14c3fd;
+        } 
+    </style>
+    <script type="text/javascript">
+        function showbig1(){
+            var nowimg = document.getElementsByTagName("img");
+            for(var n = 0;n<5;n++){
+                nowimg[n].style = "";
+            }
+            nowimg[0].style = "border: 5;border-style: solid; color: yellow;";
+            var imgname = document.getElementById('bigpic');
+            imgname.src = nowimg[0].src;
+        }
+        function showbig2(){
+            var nowimg = document.getElementsByTagName("img");
+            for(var n = 0;n<5;n++){
+                nowimg[n].style = "";
+            }
+            nowimg[1].style = "border: 5;border-style: solid; color: yellow;";
+            var imgname = document.getElementById('bigpic');
+            imgname.src = nowimg[1].src;
+        }
+        function showbig3(){
+            var nowimg = document.getElementsByTagName("img");
+            for(var n = 0;n<5;n++){
+                nowimg[n].style = "";
+            }
+            nowimg[2].style = "border: 5;border-style: solid; color: yellow;";
+            var imgname = document.getElementById('bigpic');
+            imgname.src = nowimg[2].src;
+        }
+        function showbig4(){
+            var nowimg = document.getElementsByTagName("img");
+            for(var n = 0;n<5;n++){
+                nowimg[n].style = "";
+            }
+            nowimg[3].style = "border: 5;border-style: solid; color: yellow;";
+            var imgname = document.getElementById('bigpic');
+            imgname.src = nowimg[3].src;
+        }
+        function showbig5(){
+            var nowimg = document.getElementsByTagName("img");
+            for(var n = 0;n<5;n++){
+                nowimg[n].style = "";
+            }
+            nowimg[4].style = "border: 5;border-style: solid; color: yellow;";
+            var imgname = document.getElementById('bigpic');
+            imgname.src = nowimg[4].src;
+        }
+    </script>
+</head>
+
+<body>
+    <div id="main">
+        <div id="smallpic">
+            <img src="images/s2.jpg" width="180" height="100" onclick="showbig1()" />
+            <img src="images/s3.jpg" width="180" height="100" onclick="showbig2()" />
+            <img src="images/s4.jpg" width="180" height="100" onclick="showbig3()" />
+            <img src="images/s5.jpg" width="180" height="100" onclick="showbig4()" />
+            <img src="images/s6.jpg" width="180" height="100" onclick="showbig5()" />
+        </div>
+        <div>
+            <img id="bigpic" src="images/s1.jpg" width="940px" />
+        </div>
+    </div>
+</body>
+</html>
