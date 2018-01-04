@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title> Xiaoyee的应用商店 </title>
+</head>
+<link rel="stylesheet" type="text/css" href="KCSJ.css">
+<style type="text/css" ></style>
+<script type="text/javascript" src = "KCSJ.js"></script>
+<script type="text/javascript"> 
+</script> 
+<body style="background-image: url(images/bg.jpg);" >
+
+<div style="height: 160px;background-image: url(images/bgtop.jpg);">
+	<ul id="topul" style="padding-left: 60px;">
+		<li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)" id="topli"><a href="">热门类别</a>
+			<ul id="inul">
+			<li><a href="">摄影</a></li>
+			<li><a href="">家庭</a></li>
+			<li><a href="">音乐</a></li>
+			<li><a href="">通讯</a></li>
+			<li><a href="">购物</a></li>
+			</ul>
+		</li>
+		<li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)" id="topli"><a href="">系统工具</a>
+			<ul id="inul">
+			<li><a href="">通讯</a></li>
+			<li><a href="">美化</a></li>
+			<li><a href="">安全</a></li>
+			<li><a href="">输入</a></li>
+			<li><a href="">邮件</a></li>
+			</ul>
+		</li>
+		<li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)" id="topli"><a href="">游戏分类</a>
+			<ul id="inul">
+			<li><a href="">精品网游</a></li>
+			<li><a href="">大型单机</a></li>
+			<li><a href="">中文</a></li>
+			<li><a href="">益智</a></li>
+			<li><a href="">塔防</a></li>
+			</ul>
+		</li>
+		<li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)" id="topli"><a href="">生活出行</a>
+			<ul id="inul">
+			<li><a href="">交通导航</a></li>
+			<li><a href="">旅游</a></li>
+			<li><a href="">购物</a></li>
+			<li><a href="">视频</a></li>
+			<li><a href="">拍照</a></li>
+			</ul>
+		</li>
+		<li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)" id="topli"><a href="">实用工具</a>
+			<ul id="inul">
+			<li><a href="">美化图片</a></li>
+			<li><a href="">效率办公</a></li>
+			<li><a href="">运动</a></li>
+			<li><a href="">阅读</a></li>
+			<li><a href="">音乐</a></li>
+			</ul>
+		</li>
+		<li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)" id="topli"><a href="">其他类别</a>
+			<ul id="inul">
+			<li><a href="">热门软件</a></li>
+			<li><a href="">排行榜</a></li>
+			<li><a href="">评分最高</a></li>
+			<li><a href="">下载最多</a></li>
+			<li><a href="">推荐</a></li>
+			</ul>
+		</li>
+	</ul>
+</div>
+
+<div style="display: inline-block;width: 520px;">
+	<div id="jinrituijian">
+	<div id="jinriyouxituijian"><p id="jinriyouxituijianP">今日游戏推荐:<font style="font-weight: bolder;">黑暗之魂3</font></p></div>
+	<div id="tuijianxiazai" style="position: absolute; margin-top: 25px;margin-left: 725px;"><a href="">[点击下载]</a></div>
+	</div>
+<div id="tuijian0">
+	<img src="images/heianzhihun3.jpg" id="tuijiandatu" width="400px" height="400px">
+</div>
+<div style="width: 100px;height: 400px; border: 1px solid black;float: left;position: absolute; margin-left: 710px;margin-top: 50px;">
+	<div id="tuijian"><img src="images/heianzhihun2.jpg" width="100px" height="100px" onclick="showbig(0)"></div>
+	<div id="tuijian"><img src="images/heianzhihun1.jpg" width="100px" height="100px" onclick="showbig(1)"></div>
+	<div id="tuijian"><img src="images/heianzhihun4.jpg" width="100px" height="100px" onclick="showbig(2)"></div>
+	<div id="tuijian"><img src="images/heianzhihun5.jpg" width="100px" height="100px" onclick="showbig(3)"></div>
+</div>
+	<div id="tuijianhistory"><a href="#">[查看历史推荐]</a></div>
+</div>
+
+<div class="hotgamediv">
+	<div class="paihangbang">
+		<img src="images/paihangbang.jpg">
+	</div>
+	<div>
+		<img src="images/paihang.jpg">
+	</div>
+	<div>
+		<a href=""><font style="margin-left: 100px;">[历史排行榜]</font></a>
+	</div>
+</div>
+
+<div style="width: 430px;position: absolute;margin-left: 300px;margin-top: 35px;">
+	<div id="box">  
+        <ul id="mylist">
+            <li><a><img src="images/lol.jpg"></a></li>
+            <li><a><img src="images/datangwushuang.jpg"></a></li> 
+            <li><a><img src="images/wuxia.jpg"></a></li> 
+            <li><a><img src="images/dazui.jpg"></a></li>
+            <li><a><img src="images/xiake.jpg"></a></li>
+        </ul>
+        <ul id="underNum">
+            <li><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href="">4</a></li>
+            <li><a href="">5</a></li>
+        </ul>
+    </div>
+</div>
+<script type="text/javascript">
+var timer=setInterval("hello()",2000);  
+var mylist=document.getElementById("mylist");
+var num=document.getElementById("mylist").getElementsByTagName("li");
+var now=0;
+var left=0;
+function hello(){
+    // body...
+    // document.write("ddd"+now);
+    if(left<=-(num.length-1)*512) {
+        now=0;
+        left=-now*512;
+        mylist.style.left=left+"px";
+        now=now+1;
+    }else{
+        left=-now*512;
+        mylist.style.left=left+"px";
+        now=now+1;
+    };     
+}
+//移动的位置
+function toCover(now1){
+    now=now1;
+    left=-now*512;
+    mylist.style.left=left+"px";
+    clearInterval(timer);
+}
+var numli=document.getElementById("underNum").getElementsByTagName("li");
+for (var i = 0; i <=numli.length - 1; i++) {
+    numli[i].index=i;
+    numli[i].onmouseover=function(){
+        //alert(this.index);
+        toCover(this.index);    
+    };
+    numli[i].onmouseout=function(){
+        //alert(this.index);
+        timer=setInterval("hello()",1000);
+    };
+};
+</script>
+
+<div id="leftdiv">
+	<div id="dengluzhuce">
+	<div>
+		<ul id="denglu1" style="border: 1px solid white;">
+			<a href=""><li style="float: left;width: 170px;height: 30px; border-bottom: 1px solid black;border-right: 1px solid black;">登录</li></a>
+			<a href=""><li style="float: left;width: 170px;height: 30px;border-bottom: 1px solid black;">注册</li></a>
+		</ul>
+	</div>
+	<div style="margin-top: 50px;">
+	<form>
+		<table>
+			<tr>
+				<td>用户名：</td>
+				<td><input type="text" id="username" name="username" /><span id="errorTip"></span></td>
+			</tr>
+			<tr>
+				<td>密码：</td>
+				<td><input type="password" id="passwd"</td>
+			</tr>
+			<tr>
+				<td>确认密码：</td>
+				<td><input type="password" id="rePasswd"/></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" id="reset" value="登录" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input id="submit" type="submit" value="注册" /></td>
+			</tr>
+		</table>
+	</form>
+	</div>
+	</div>
+	<div style="position: absolute;margin-top: 20px;margin-left: 30px;">
+		<a href="">[账户]</a>
+	</div><div style="position: absolute;margin-top: 50px;margin-left: 30px;">
+		<a href="">[我的愿望清单]</a>
+	</div><div style="position: absolute;margin-top: 80px;margin-left: 30px;">
+		<a href="">[兑换]</a>
+	</div><div style="position: absolute;margin-top: 110px;margin-left: 30px;">
+		<a href="">[我的应用程序和游戏]</a>
+	</div>
+</div>
+
+
+
+	
+<div style="width: 1347px;height: 200px;border: 1px solid black;position: absolute;margin-top: 360px;background-color: #6C6C6C;">
+    <div class="youqinglianjie"><em></em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;友情链接</div>
+	<div class="youqinglianjie0" style="margin-left: 130px;width: 1100px;height: 178px;background-color: #9D9D9D;">
+	<ul id="button0">
+		<li><a href="http://play.163.com/" target="_blank" title="爱玩网">爱玩网</a></li>
+		<li><a href="http://games.qq.com/" target="_blank" title="腾讯游戏">腾讯游戏</a></li>
+		<li><a href="http://g.360.cn/" target="_blank" title="360游戏频道">360游戏频道</a></li>
+		<li><a href="http://wanwan.sina.com.cn/" target="_blank" title="新浪玩玩">新浪玩玩</a></li>
+		<li><a href="http://www.gamersky.com/" target="_blank" title="游民星空">游民星空</a></li>
+		<li><a href="http://www.265g.com/" target="_blank" title="265G网页游戏">265G网页游戏</a></li>
+		<li><a href="http://www.tgbus.com/" target="_blank" title="电玩巴士">电玩巴士</a></li>
+		<li><a href="http://games.ifeng.com/ " target="_blank" title="凤凰网游戏">凤凰网游戏</a></li>
+		<li><a href="http://www.07073.com/" target="_blank" title="07073网页游戏">07073网页游戏</a></li>
+		<li><a href="http://www.doyo.cn/" target="_blank" title="逗游游戏宝库">逗游游戏宝库</a></li>
+		<li><a href="http://www.2144.cn/" target="_blank" title="2144小游戏">2144小游戏</a></li>
+		<li><a href="http://game.51.com/" target="_blank" title="51游戏社区">51游戏社区</a></li>
+		<li><a href="http://wan.renren.com/ " target="_blank" title="人人游戏">人人游戏</a></li>
+		<li><a href="http://game.zol.com.cn/" target="_blank" title="中关村游戏">中关村游戏</a></li>
+		<li><a href="http://www.duowan.com/" target="_blank" title="多玩游戏">多玩游戏</a></li>
+		<li><a href="http://07073.baidu.com/" target="_blank" title="07073游戏开服">07073游戏开服</a></li>
+		<li><a href="http://game.yesky.com/" target="_blank" title="天极游戏">天极游戏</a></li>
+		<li><a href="http://www.yxdown.com/" target="_blank" title="游迅单机游戏">游迅单机游戏</a></li>
+		<li><a href="http://www.86wan.com/" target="_blank" title="86玩网页游戏">86玩网页游戏</a></li>
+		<li><a href="http://www.37.com/" target="_blank" title="37游戏">37游戏</a></li>
+		<li><a href="http://www.33lc.com/" target="_blank" title="绿茶软件下载">绿茶软件下载</a></li>
+		<li><a href="http://www.xdowns.com/" target="_blank" title="绿盟下载">绿盟下载</a></li>
+		<li><a href="http://pcgame.uuu9.com/" target="_blank" title="游久单机游戏">游久单机游戏</a></li>
+		<li><a href="http://www.91danji.com/ " target="_blank" title="单机游戏下载">单机游戏下载</a></li>
+		<li><a href="http://www.sgamer.com/" target="_blank" title="超级玩家">超级玩家</a></li>
+		<li><a href="http://pc.duowan.com/" target="_blank" title="多玩单机游戏">多玩单机游戏</a></li>
+		<li><a href="http://pc.52pk.com/" target="_blank" title="52PK单机游戏">52PK单机游戏</a></li>
+		<li><a href="http://www.18183.com/" target="_blank" title="18183手机游戏">18183手机游戏</a></li>
+		<li><a href=" http://www.3234.com/" target="_blank" title="3234单机游戏">3234单机游戏</a></li>
+		<li><a href="http://www.3839.com" target="_blank" title="好游快爆">好游快爆</a></li>
+		<li><a href="http://www.ewoka.com/" target="_blank" title="E蜗新手卡">E蜗新手卡</a></li>
+		<li><a href="http://xiaoyouxi.2345.com/" target="_blank" title="双人小游戏">双人小游戏</a></li>
+		<li><a href="http://www.pc6.com/" target="_blank" title="PC6下载">PC6下载</a></li>
+		<li><a href="http://www.40407.com/" target="_blank" title="40407网页游戏">40407网页游戏</a></li>
+		<li><a href="http://www.gao7.com/" target="_blank" title="搞趣网">搞趣网</a></li>
+		<li><a href="http://www.gamedog.cn/" target="_blank" title="游戏狗手机游戏">游戏狗手机游戏</a></li>
+		<li><a href="http://www.juxia.com/" target="_blank" title="聚侠网页游戏">聚侠网页游戏</a></li>
+		<li><a href="http://www.9u8u.com/ " target="_blank" title="9u8u网页游戏">9u8u网页游戏</a></li>
+		<li><a href="http://www.ruan8.com/" target="_blank" title="软吧手机软件">软吧手机软件</a></li>
+		<li><a href="http://www.cr173.com/" target="_blank" title="西西软件园">西西软件园</a></li>
+		<li><a href=" http://v.61.com/" target="_blank" title="淘米动画片大全">淘米动画片大全</a></li>
+		<li><a href="http://www.yue365.com/" target="_blank" title="365音乐网">365音乐网</a></li>
+		<li><a href="http://down.it168.com" target="_blank" title="it168单机游戏">it168单机游戏</a></li>
+		<li><a href="http://www.downxia.com/  " target="_blank" title="当下软件园">当下软件园</a></li>
+		<li><a href="http://www.dianjinghu.com/" target="_blank" title="电竞虎">电竞虎</a></li>
+		<li><a href="http://www.douxie.com/" target="_blank" title="斗蟹单机游戏">斗蟹单机游戏</a></li>
+		<li><a href="http://www.4399.cn/" target="_blank" title="4399手机游戏网">4399手机游戏网</a></li>
+		<li><a href="http://www.replays.net/" target="_blank" title="锐派游戏">锐派游戏</a></li>
+		<li><a href="http://www.7xz.com/" target="_blank" title="七匣子手游">七匣子手游</a></li>
+		<li><a href="http://www.9553.com/" target="_blank" title="9553软件下载">9553软件下载</a></li>
+		<li><a href="http://www.962.net/" target="_blank" title="乐游网单机游戏">乐游网单机游戏</a></li>
+		<li><a href="http://www.25pp.com/" target="_blank" title="iPhone游戏">iPhone游戏</a></li>
+		<li><a href="http://news.4399.com/" target="_blank" title="4399游戏资讯">4399游戏资讯</a></li>
+		<li><a href="http://www.ahgame.com/" target="_blank" title="安游在线">安游在线</a></li>
+		<li><a href="http://www.cncrk.com/" target="_blank" title="起点下载">起点下载</a></li>
+		<li><a href="http://wan.2345.com/" target="_blank" title="2345页游">2345页游</a></li>
+		<li><a href="http://www.paopaoche.net/" target="_blank" title="跑跑车单机游戏">跑跑车单机游戏</a></li>
+		<li><a href="http://www.newyx.net/" target="_blank" title="牛游戏网">牛游戏网</a></li>
+		<li><a href="http://www.xiazaiba.com/" target="_blank" title="软件下载">软件下载</a></li>
+		<li><a href="https://www.gezila.com/" target="_blank" title="手机游戏">手机游戏</a></li>
+		<li><a href="http://www.fhyx.com" target="_blank" title="凤凰游戏">凤凰游戏</a></li>
+		<li><a href="http://chushou.tv" target="_blank" title="触手直播">触手直播</a></li>
+		<li><a href="http://www.wandoujia.com/" target="_blank" title="安卓市场">安卓市场</a></li>
+		<li><a href="http://www.ddooo.com/" target="_blank" title="多多软件站 ">多多软件站 </a></li>
+    </ul>
+    </div> 
+</div>
+</div>
+</div>
+
+</body>
+</html>
