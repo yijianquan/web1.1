@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>简单计算器</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+		/*设置按键的高度和宽度为50px*/
+			button{
+				height: 50px;
+				width: 50px;
+				font-size: 25px;
+			}
+		/*设置返回结果框里的文字在右边，字体大小为30px*/
+			#result{
+				text-align: right;
+				font-size: 30px;
+			}
+		</style>
+		<script type="text/javascript">
+			//数据存入字符串,全局变量str
+			var str="";
+			//书写数据显示函数
+			function showData(a){
+				str = str + a.value;
+ 				document.getElementById("result").innerHTML = str;
+			};
+			//清0操作
+			function clearData(){
+				str="";
+				document.getElementById("result").innerHTML = 0;
+			}
+			//计算数值并返回结果
+			function calculate(){
+				document.getElementById("result").innerHTML = eval(str);
+			}
+		</script>
+	</head>
+	<!--第一，当用户点击等号时，之前点击的被运算数在结果框中清除；第二，进行数据运算；第三，将运算结果显示在结果框中。将这三个步骤合在一起放在一个函数 calculate 中。-->
+	<body>
+		<table border="1px" cellpadding="8px" align="center">
+			<tr>
+				<td colspan="3" id="result">0</td>
+				<td><button type="button" value="c" onclick="clearData()">c</button></td>
+			</tr>
+			<tr>
+				<td><button value="1" onclick="showData(this)">1</button></td>
+				<td><button value="2" onclick="showData(this)">2</button></td>
+				<td><button value="3" onclick="showData(this)">3</button></td>
+				<td><button value="+" onclick="showData(this)">+</button></td>
+			</tr>
+			<tr>
+				<td><button value="4" onclick="showData(this)">4</button></td>
+				<td><button value="5" onclick="showData(this)">5</button></td>
+				<td><button value="6" onclick="showData(this)">6</button></td>
+				<td><button value="-" onclick="showData(this)">-</button></td>
+			</tr>
+			<tr>
+				<td><button value="7" onclick="showData(this)">7</button></td>
+				<td><button value="8" onclick="showData(this)">8</button></td>
+				<td><button value="9" onclick="showData(this)">9</button></td>
+				<td><button value="*" onclick="showData(this)">*</button></td>
+			</tr>
+			<tr>
+				<td><button value="0" onclick="showData(this)">0</button></td>
+				<td><button value="." onclick="showData(this)">.</button></td>
+				<td><button value="=" onclick="calculate()">=</button></td>
+				<td><button value="/" onclick="showData(this)">/</button></td>
+			</tr>
+		</table>
+	</body>
+</html>
